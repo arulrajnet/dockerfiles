@@ -1,0 +1,9 @@
+version: '2'
+services:
+  lighttpd:
+      build: lighttpd
+      image: arulrajnet/lighttpd
+      ports:
+        - 8080:8080
+      volumes:
+        - ./lighttpd/html:/var/www/localhost
